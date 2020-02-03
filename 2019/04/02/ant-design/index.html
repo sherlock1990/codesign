@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Sherlock Lau">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="fonts/codesign.css">
+  <link rel="stylesheet" href="../fonts/codesign.css">
+  <link rel="stylesheet" href="../../fonts/codesign.css">
+  <title>Ant Design 设计原则与价值观 ~ codesign - 自信成长，无惧悲伤</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+</head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" style="font-family:'codesign';letter-spacing: 2px;"
+       href="/">&nbsp;<strong>codesign</strong>&nbsp;</a>
+       
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">主页</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/post.jpg')no-repeat center center;
+           background-size: cover;
+           background-attachment: scroll;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+                Ant Design 设计原则与价值观
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  发表于 2019 年  04月 02 日
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    共 2.5k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      预计需要 8 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    被浏览 <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>在阅读了蚂蚁金服的设计文档以后，发现里面有很多值得在日常设计与工作中注意的准则，于是整理记录，以便后续参考使用。</p>
+<p>本文整理自<a href="https://ant.design/docs/spec/introduce-cn" target="_blank" rel="noopener">Ant Design Documents</a>文档，供个人参考学习使用。</p>
+<a id="more"></a>
+<h2 id="设计价值观"><a href="#设计价值观" class="headerlink" title="设计价值观"></a>设计价值观</h2><ol>
+<li><strong>自然</strong>  <ul>
+<li>在行为执行中，利用行为分析、人工智能、传感器、元数据等一系列方式，辅助用户有效决策、减少用户额外操作，从而节省用户脑力和体力，让人机交互行为更自然；</li>
+<li>在感知和认知中，视觉系统扮演着最重要的角色，通过提炼自然界中的客观规律并运用到界面设计中，从而创建更有层次产品体验；同时，适时加入听觉系统、触觉系统等，创建更多维、更真实的产品体验。</li>
+</ul>
+</li>
+<li><strong>确定</strong>  <ul>
+<li>保持克制：聚焦最有价值产品功能打磨，使用尽量少的设计元素表达；</li>
+<li>面向对象的方法：探索设计规律，将其抽象成对象，增强界面设计的灵活性和可维护性，减少设计者的主观干扰；</li>
+<li>模块化设计：将复杂或重复出现的局部封装成模块，提供有限接口与其他模块互动，减少系统复杂度，增强可靠性及可维护性。</li>
+</ul>
+</li>
+</ol>
+<h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><h3 id="1-亲密性"><a href="#1-亲密性" class="headerlink" title="1. 亲密性"></a>1. 亲密性</h3><p>信息之间关联性越高，距离就该越近，反之，距离应该越远。<strong>亲密性的根本目的是实现组织性，使页面结构和信息一目了然。</strong></p>
+<ul>
+<li><strong>纵向间距关系：</strong>通过不同间距区分信息层次；</li>
+<li><strong>横向间距关系：</strong>为了适应不同尺寸屏幕，横向采用栅格布局排布，保证布局灵活性。</li>
+</ul>
+<h3 id="2-对齐"><a href="#2-对齐" class="headerlink" title="2. 对齐"></a>2. 对齐</h3><p>在知觉过程中人们往往倾向于使知觉对象的直线继续成为直线，使曲线继续成为曲线。在界面设计中，将元素进行对齐，既符合用户的认知特性，也能引导视觉流向，让用户更流畅地接收信息。</p>
+<ul>
+<li><strong>文案类对齐：</strong>页面字段或段落较短时，确定一个统一的视觉起点；</li>
+<li><strong>表单类对齐：</strong>冒号对齐能让内容锁定在一定范围内，提高填写效率。</li>
+<li><strong>数字类对齐：</strong>建议数值取相同有效位数，右对齐。</li>
+</ul>
+<h3 id="3-对比"><a href="#3-对比" class="headerlink" title="3. 对比"></a>3. 对比</h3><p>增强视觉效果，同时在不同元素之间建立有组织的层次结构，让用户快速识别关键信息。</p>
+<ul>
+<li><strong>主次关系对比：</strong>突出的方法不局限于强化重点项，也可是弱化其他项。  <ul>
+<li>在一些需要用户慎重决策的场景中，系统应该保持中立，不能替用户做出诱导用户的判断。</li>
+</ul>
+</li>
+<li><strong>总分关系对比：</strong>通过排版、字体、大小等方式突出层次感，区分总分关系，使页面更有张力和节奏感。</li>
+<li><strong>状态关系对比：</strong>通过改变颜色、增加辅助形状等方法实现状态关系对比。  <ul>
+<li>静态对比</li>
+<li>动态对比</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-重复"><a href="#4-重复" class="headerlink" title="4. 重复"></a>4. 重复</h3><p>相同的元素在整个界面中不断重复，不仅可以有效降低用户的学习成本，也可以帮助用户识别出这些元素之间的关联性。</p>
+<h3 id="5-直截了当"><a href="#5-直截了当" class="headerlink" title="5. 直截了当"></a>5. 直截了当</h3><p>正如 Alan Cooper 所言：『需要在哪里输出，就要允许在哪里输入』。这就是直接操作的原理。eg：<strong>不要为了编辑内容而打开另一个页面，应该直接在上下文中实现编辑。</strong></p>
+<ul>
+<li><strong>页内编辑：</strong>  <ul>
+<li>单字段行内编辑，当「易读性」比「易编辑性」重要时，可使用「单击编辑」。</li>
+<li>当「易读性」为主，同时又要突出操作行为「易编辑性」时，可使用<strong>文字链/图标编辑</strong>。</li>
+<li>多字段行内编辑。</li>
+</ul>
+</li>
+<li><strong>拖放</strong></li>
+</ul>
+<h3 id="6-足不出户"><a href="#6-足不出户" class="headerlink" title="6. 足不出户"></a>6. 足不出户</h3><p>能在这个页面解决的问题，就不要去其它页面解决，因为任何页面刷新和跳转都会引起<strong>变化盲视（Change Blindness）</strong>，导致用户<strong>心流（Flow）</strong>被打断。频繁的页面刷新和跳转，就像在看戏时，演员说完一行台词就安排一次谢幕一样。</p>
+<blockquote>
+<p>变化盲视（Change Blindness） ：指视觉场景中的某些变化并未被观察者注意到的心理现象。产生这种现象的原因包括场景中的障碍物，眼球运动、地点的变化，或者是缺乏注意力等。——摘自《维基百科》</p>
+<p>心流（Flow） ：也有别名以化境 (Zone) 表示，亦有人翻译为神驰状态，定义是一种将个人精神力完全投注在某种活动上的感觉；心流产生时同时会有高度的兴奋及充实感。——摘自《维基百科》</p>
+</blockquote>
+<ul>
+<li><strong>覆盖层：</strong>二次确认覆盖层，避免滥用Modal进行二次确认，应该勇敢让用户尝试，给机会「撤销」即可。</li>
+<li><strong>详情覆盖层：</strong>列表中，通过「悬停」或「点击」某个区块，在当前页加载该条列表项的更多信息。</li>
+<li><strong>输入覆盖层：</strong>直接进行少量字段输入。</li>
+<li><strong>嵌入层：</strong>列表嵌入，显示某条列表的详情信息，保持上下文不中断；</li>
+<li><strong>流程处理：</strong>  <ul>
+<li>渐进式展现</li>
+<li>配置程序</li>
+<li>弹出框覆盖层</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-简化交互"><a href="#7-简化交互" class="headerlink" title="7. 简化交互"></a>7. 简化交互</h3><p>根据费茨法则（Fitts’s Law）所描述的，如果用户鼠标移动距离越少、对象相对目标越大，那么用户越容易操作。通过运用上下文工具（即：放在内容中的操作工具），使内容和操作融合，从而简化交互。</p>
+<ul>
+<li><strong>实时可见工具：</strong>如果某个操作非常重要，就应该把它放在界面中，实时可见。</li>
+<li><strong>悬停即现工具：</strong>如果某个操作不那么重要，或者使用『实时可见工具』过于啰嗦会影响用户阅读时，可以在悬停在该对象上时展示操作项。</li>
+<li><strong>开关显示工具：</strong> 如果某些操作只需要在特定模式时显示，可以通过开关来实现。</li>
+<li><strong>可视区域≠可点击区域：</strong> 在使用 Table 时，文字链的点击范围受到文字长短影响，可以设置整个单元格为热区，以便用户触发。<br>当需要增强按钮的响应性时，可以通过增加用户点击热区的范围，而不是增大按钮形状，从而增强响应性，又不缺失美感。</li>
+</ul>
+<h3 id="8-提供邀请"><a href="#8-提供邀请" class="headerlink" title="8. 提供邀请"></a>8. 提供邀请</h3><p>很多富交互模式（eg：『拖放』、『行内编辑』、『上下文工具』）都有一个共同问题，就是缺少易发现性。所以『提供邀请』是成功完成人机交互的关键所在。</p>
+<p>邀请就是引导用户进入下一个交互层次的提醒和暗示，通常包括意符（eg：实时的提示信息）和可供性，以表明在下一个界面可以做什么。当可供性中可感知的部分（Perceived Affordance）表现为意符时，人机交互的过程往往更加自然、顺畅。</p>
+<blockquote>
+<p>意符（Signifiers） ：一种额外的提示，告诉用户可以采取什么行为，以及应该怎么操作；必须是可感知（eg：视觉、听觉、触觉等）。——摘自《设计心理学 1 》</p>
+<p>可供性（Affordance） ：也被翻译成『示能』，由 James J. Gibson 提出，定义为物品的特性与决定物品用途的主体能力之间的关系；其中部分可感知（此部分定义为 Perceived Affordance），部分不可感知。——摘自《设计心理学 1 》</p>
+</blockquote>
+<ul>
+<li><strong>静态邀请：</strong>  <ul>
+<li>文本邀请</li>
+<li>白板式邀请</li>
+<li>未完成邀请</li>
+<li>漫游探索邀请</li>
+</ul>
+</li>
+<li><strong>动态邀请：</strong>以响应用户在特定位置执行特定操作的方式，提供特定的邀请。</li>
+</ul>
+<h3 id="9-巧用过渡"><a href="#9-巧用过渡" class="headerlink" title="9. 巧用过渡"></a>9. 巧用过渡</h3><p>人脑灰质（Gray Matter）会对动态的事物（eg：移动、形变、色变等）保持敏感。在界面中，适当的加入一些过渡效果，能让界面保持生动，同时也能增强用户和界面的沟通。</p>
+<ul>
+<li>Adding: 新加入的信息元素应被告知如何使用，从页面转变的信息元素需被重新识别。</li>
+<li>Receding: 与当前页无关的信息元素应采用适当方式移除。</li>
+<li>Normal: 指那些从转场开始到结束都没有发生变化的信息元素。</li>
+</ul>
+<p><a href="https://ant.design/docs/spec/transition-cn" target="_blank" rel="noopener">带有演示动画的视频，请移至这里观看。</a></p>
+<h3 id="10-即时反馈"><a href="#10-即时反馈" class="headerlink" title="10. 即时反馈"></a>10. 即时反馈</h3><p>『即时反应』的重要性体现在交互之后立即给出反馈。</p>
+<p>就像『牛顿第三定律』所描述作用力和反作用一样，用户进行了操作或者内部数据发生了变化，系统就应该立即有一个对应的反馈，同时输入量级越大、重要性越高，那么反馈量级越大、重要性越高。</p>
+<p>虽然反馈太多（准确的说，错误的反馈太多）是一个问题，但是反馈太少甚至没有反馈的系统，则让人感觉迟钝和笨拙，用户体验更差。</p>
+<ul>
+<li><strong>查询模式</strong>  <ul>
+<li>自动完成：用户输入时，下拉列表随之匹配。</li>
+<li>实时搜索</li>
+</ul>
+</li>
+<li><strong>反馈模式</strong>  <ul>
+<li>实时预览：在用户提交之前，先了解系统如何处理他的输入。</li>
+<li>解决错误最好的办法，就是不让错误发生。</li>
+<li>进度指示：当一个操作需要一定时间完成时，就需要即时告知进度，保持与用户的沟通。 常见的进度指示：『按钮加载』、『表格加载』、『富列表加载』、『页面加载』。可根据操作的量级和重要性，展示不同类型的进度指示。</li>
+<li>点击刷新：告知用户有新内容，并提供按钮等工具帮助用户查看。</li>
+<li>定时刷新：无需用户接入，定时展现新内容。</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-关于视觉"><a href="#11-关于视觉" class="headerlink" title="11. 关于视觉"></a>11. 关于视觉</h3><p><a href="https://ant.design/docs/spec/colors-cn" target="_blank" rel="noopener">看这里</a></p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E8%AE%BE%E8%AE%A1%E5%92%96">设计咖</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%96%87%E6%91%98">文摘</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99">设计原则</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+        <div class="mailto" style="text-align:center;margin-top:60px;"><a style="font-size:1rem;color:#D74F3A;font-weight:500;" href="mailto:liuz1226@hotmail.com" target="_blank" rel="noopener" data-address="matteo" data-domain="manzinello.dev"><span class="mailto-text">对我的文章或观点有想法？👆点这里给我写信吧！😃</span></a></div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h6"></p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+    
+  </div>
+</div>
+
+<!-- custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-md">
+    <div class="container custom post-content mx-auto">
+      <span style="text-align:center;font-family:'codesign';">Growing with confidence, no fear of sorrow.</span>
+    </div>
+  </div>
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    Powered by <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    &nbsp;&nbsp; <i class="fas fa-drum"></i>&nbsp;&nbsp;&nbsp;
+    Build by <a href="https://codesign.top" target="_blank" rel="nofollow noopener"><b>Codesign</b></a>
+    &nbsp;&nbsp; <i class="fas fa-fan"></i>&nbsp;&nbsp;
+    Theme by <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+    <br>
+    
+  
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<script src="/js/mailgo.min.js"></script>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+    <!-- Baidu Analytics -->
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8384704f29b359a0fd5c16bbc6793907";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "left",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
