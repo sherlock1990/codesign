@@ -8,8 +8,14 @@
     <link href="undefined2020/05/13/reports4/"/>
     <url>2020/05/13/reports4/</url>
     
-    <content type="html"><![CDATA[<p>从春节期间的疫情到今天为止，总算进入一个平稳期，全国大多数地方都没有很严重的爆发病例了，也是时候沉淀一下，回顾这段时间的经历，为下一步做做计划。</p><h2 id="效率工具"><a href="#效率工具" class="headerlink" title="效率工具"></a>效率工具</h2><p>我去年购买的滴答清单高级会员到期了，一年都在用它作为我的任务清单工具。直到我在某个帖子里发现一个问题，那就是** iOS 端的滴答清单通知没有走 Apple 的同步机制<strong>，导致了如果你在网页或者 mac 端建立了任务，如果没有在 iOS 上打开滴答清单，那么它是不会被同步的。我在致信滴答客服以后得到的回应是，将在未来改进。<br>于是我没有再继续续费，而是切换到了之前在用的清单，Things 3。<br><img src="https://culturedcode.com/things/2017-03-25/images/whatsnew-collage-2x.png" srcset="/img/loading.gif" alt="图片来自 Things 官网"><br>相信很多人也很熟悉这款软件了，界面条理清晰，交互更是生动易用，逻辑严谨，但又有一种极简主义的风格。<br>有人会说，</strong>Microsoft To Do**不香吗？<br>但是 To Do 没有 Apple Watch 端呀。</p><h2 id="iOS、macOS，不像-OS"><a href="#iOS、macOS，不像-OS" class="headerlink" title="iOS、macOS，不像 OS"></a>iOS、macOS，不像 OS</h2><p>自从更新了 iOS 13 和 macOS Catalina 之后，真是问题不断。iOS 自从 13.4.1 开始，除了莫名的卡顿以外，很多界面都有一定几率出现错位、缺失、无法加载的情况，单单是状态栏无法加载完整的问题我就遇到过好多次。macOS 更是一言难尽，就连备忘录导出 PDF 都会出现错位，很多 32 位软件无法使用更是导致兼容性大打折扣，真让我怀疑这一次是不是 Apple 团队做出来的产品。<br>好在 <a href="https://developer.apple.com/wwdc20/" target="_blank" rel="noopener">WWDC2020</a>还有一个月就开始了，不知道 iOS 14 会不会带来惊喜。<br>至少把 bug 解了吧。KPI 啊 Criag。</p><h2 id="新的-EDC"><a href="#新的-EDC" class="headerlink" title="新的 EDC"></a>新的 EDC</h2><p>前段时间，工作原因需要使用 Adobe After Effects，但 AE 的缓存文件确实是大，对于硬盘空间只剩 90G 的我来说真是不敢玩火，记得前年用 AE 渲染语音动画，搞的我的硬盘最后生生吃满。<br>于是我从京东购买了一块高速的<a href="https://item.jd.com/6724673.html#crumb-wrap" target="_blank" rel="noopener">闪迪 SSD 移动硬盘</a>，固态硬盘体积小，还做成了防水防尘防摔的外观，随身携带真是感觉不要太好。我把 AE 的缓存文件夹设置在移动硬盘里也没有出现什么问题，不过缺点就是价格太贵了，基本是 1G 需要一块多钱的样子。<br>于是我的新的 EDC 变成了：<strong>iPhone 8、Apple Watch Series 5、AirPods 2、闪迪 SSD 移动硬盘、钥匙、口罩、移动电源（iPhone 8 实在是扛不住了），还有一个无印良品的单肩小挎包。</strong></p><h2 id="疫情期间的感受"><a href="#疫情期间的感受" class="headerlink" title="疫情期间的感受"></a>疫情期间的感受</h2><p>春节回家的时候，一切还是欣欣向荣，一早就陪父母买好了年货，准备过个好年。但突如其来的疫情打乱了节奏，从感染人数的增加到道路封闭，小区限流，口罩缺货，我们一家几乎到 3 月份才得以走出小区透透气。<br>不过这也带来了工作以后最长的一次假期，虽然每天看新闻对疫情很是担心，但也有了难得的陪伴家人的时间。可以每天想想做点什么，看点什么，配父母、妻女聊聊天，也许这次困难正是提醒我们，要抽出时间，慢下来，顾工作，也要顾家庭。<br>其实疫情最大的影响，是对我们心态的改变，也许很多人会因此而提心吊胆，辗转反侧，当疫情即将结束，工作学习陆续开展的时候，我们该如何更快地恢复状态，以饱满的激情投入正常的生活，这是一个值得深深思考的问题。<br>而在未来也许还有类似的大规模困难需要我们面对，那时候我们是否能用已经吸取的教训和心得，更好地处理那时的挫折呢？</p>]]></content>
+    <content type="html"><![CDATA[<p>从春节期间的疫情到今天为止，总算进入一个平稳期，全国大多数地方都没有很严重的爆发病例了，也是时候沉淀一下，回顾这段时间的经历，为下一步做做计划。</p><h2 id="效率工具"><a href="#效率工具" class="headerlink" title="效率工具"></a>效率工具</h2><p>我去年购买的滴答清单高级会员到期了，一年都在用它作为我的任务清单工具。直到我在某个帖子里发现一个问题，那就是** iOS 端的滴答清单通知没有走 Apple 的同步机制**，导致了如果你在网页或者 mac 端建立了任务，如果没有在 iOS 上打开滴答清单，那么它是不会被同步的。我在致信滴答客服以后得到的回应是，将在未来改进。<br>于是我没有再继续续费，而是切换到了之前在用的清单，Things 3。</p><p><img src="https://culturedcode.com/things/2017-03-25/images/whatsnew-collage-2x.png" srcset="/img/loading.gif" alt="图片来自 Things 官网"></p><p>相信很多人也很熟悉这款软件了，界面条理清晰，交互更是生动易用，逻辑严谨，但又有一种极简主义的风格。<br>有人会说，<strong>Microsoft To Do</strong>不香吗？<br>但是 To Do 没有 Apple Watch 端呀。</p><h2 id="iOS、macOS，不像-OS"><a href="#iOS、macOS，不像-OS" class="headerlink" title="iOS、macOS，不像 OS"></a>iOS、macOS，不像 OS</h2><p>自从更新了 iOS 13 和 macOS Catalina 之后，真是问题不断。iOS 自从 13.4.1 开始，除了莫名的卡顿以外，很多界面都有一定几率出现错位、缺失、无法加载的情况，单单是状态栏无法加载完整的问题我就遇到过好多次。macOS 更是一言难尽，就连备忘录导出 PDF 都会出现错位，很多 32 位软件无法使用更是导致兼容性大打折扣，真让我怀疑这一次是不是 Apple 团队做出来的产品。<br>好在 <a href="https://developer.apple.com/wwdc20/" target="_blank" rel="noopener">WWDC2020</a>还有一个月就开始了，不知道 iOS 14 会不会带来惊喜。<br>至少把 bug 解了吧。KPI 啊 Criag。</p><h2 id="新的-EDC"><a href="#新的-EDC" class="headerlink" title="新的 EDC"></a>新的 EDC</h2><p>前段时间，工作原因需要使用 Adobe After Effects，但 AE 的缓存文件确实是大，对于硬盘空间只剩 90G 的我来说真是不敢玩火，记得前年用 AE 渲染语音动画，搞的我的硬盘最后生生吃满。<br>于是我从京东购买了一块高速的<a href="https://item.jd.com/6724673.html#crumb-wrap" target="_blank" rel="noopener">闪迪 SSD 移动硬盘</a>，固态硬盘体积小，还做成了防水防尘防摔的外观，随身携带真是感觉不要太好。我把 AE 的缓存文件夹设置在移动硬盘里也没有出现什么问题，不过缺点就是价格太贵了，基本是 1G 需要一块多钱的样子。<br>于是我的新的 EDC 变成了：<strong>iPhone 8、Apple Watch Series 5、AirPods 2、闪迪 SSD 移动硬盘、钥匙、口罩、移动电源（iPhone 8 实在是扛不住了），还有一个无印良品的单肩小挎包。</strong></p><h2 id="疫情期间的感受"><a href="#疫情期间的感受" class="headerlink" title="疫情期间的感受"></a>疫情期间的感受</h2><p>春节回家的时候，一切还是欣欣向荣，一早就陪父母买好了年货，准备过个好年。但突如其来的疫情打乱了节奏，从感染人数的增加到道路封闭，小区限流，口罩缺货，我们一家几乎到 3 月份才得以走出小区透透气。<br>不过这也带来了工作以后最长的一次假期，虽然每天看新闻对疫情很是担心，但也有了难得的陪伴家人的时间。可以每天想想做点什么，看点什么，配父母、妻女聊聊天，也许这次困难正是提醒我们，要抽出时间，慢下来，顾工作，也要顾家庭。<br>其实疫情最大的影响，是对我们心态的改变，也许很多人会因此而提心吊胆，辗转反侧，当疫情即将结束，工作学习陆续开展的时候，我们该如何更快地恢复状态，以饱满的激情投入正常的生活，这是一个值得深深思考的问题。<br>而在未来也许还有类似的大规模困难需要我们面对，那时候我们是否能用已经吸取的教训和心得，更好地处理那时的挫折呢？</p>]]></content>
     
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
     
     
     <tags>
@@ -425,9 +431,9 @@
     
     <tags>
       
-      <tag>回忆</tag>
-      
       <tag>爷爷</tag>
+      
+      <tag>回忆</tag>
       
     </tags>
     
@@ -452,9 +458,9 @@
     
     <tags>
       
-      <tag>爷爷</tag>
-      
       <tag>小年</tag>
+      
+      <tag>爷爷</tag>
       
     </tags>
     
