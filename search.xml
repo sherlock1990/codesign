@@ -47,7 +47,7 @@
 <h3 id="8-换起键盘样式"><a href="#8-换起键盘样式" class="headerlink" title="8. 换起键盘样式"></a>8. 换起键盘样式</h3><p>移动端设计表单输入的时候，都会弹起键盘，在不同场景下给用户换起不同的键盘，可以极大提高操作效率。<br>例如验证码、金融支付输入时弹出数字键盘、密码输入框弹起英文键盘等。<br>另外，在某些场景下，弹起的键盘可能遮挡关键区域，我们在设计的时候要考虑到。<br><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/20200526180242.png" srcset="/img/loading.gif" alt=""></p>
 <h3 id="9-微文案"><a href="#9-微文案" class="headerlink" title="9. 微文案"></a>9. 微文案</h3><p>无论是以上任何情形，标签还是占位符，提示性文字还是错误反馈，表意必须清晰易懂，消除用户的疑虑，在整个流程中，让用户尽快做出准确的选择。</p>
 <p>例如关闭时，弹出弹窗进行确认，是否要取消时，一个是确定，一个是取消，就会产生歧义。</p>
-<p>更多关于微文案的内容，可以参考下文：<br><a href="https://www.uisdc.com/design-guide-for-micro-copywriting" target="_blank" rel="noopener">微文案设计指南</a></p>
+<p>更多关于微文案的内容，可以参考下文：<a href="https://www.uisdc.com/design-guide-for-micro-copywriting" target="_blank" rel="noopener">微文案设计指南</a></p>
 <h2 id="特殊输入框的处理"><a href="#特殊输入框的处理" class="headerlink" title="特殊输入框的处理"></a>特殊输入框的处理</h2><h3 id="1-电话输入框"><a href="#1-电话输入框" class="headerlink" title="1. 电话输入框"></a>1. 电话输入框</h3><p>电话通常分为国家地区、区号、手机号。</p>
 <h3 id="2-身份证-银行卡输入框"><a href="#2-身份证-银行卡输入框" class="headerlink" title="2. 身份证/银行卡输入框"></a>2. 身份证/银行卡输入框</h3><p>此类输入框可以结合输入、输入自动填充、扫描、图片识别等功能，减少用户操作。</p>
 <h3 id="3-密码输入框"><a href="#3-密码输入框" class="headerlink" title="3. 密码输入框"></a>3. 密码输入框</h3><p>密码输入有两种形式，一是直接输入以「*」显示，从开始到结束，如果没有查看密码，就不知道自己输入是否正确；二是输入的时候明文显示，1~2s 后进行隐藏处理，这样可以减少用户的使用成本。<br>另外就是，一旦有密码，就必须有确认密码进行校正，减少用户错误率。</p>
