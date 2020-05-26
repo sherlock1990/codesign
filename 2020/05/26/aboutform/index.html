@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="fonts/codesign.css">
   <link rel="stylesheet" href="../fonts/codesign.css">
   <link rel="stylesheet" href="../../fonts/codesign.css">
-  <title>院子里的银河系 ~ codesign - 自信成长，无惧悲伤</title>
+  <title>关于B端产品的输入框设计 ~ codesign - 自信成长，无惧悲伤</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -102,7 +102,7 @@
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
-                院子里的银河系
+                关于B端产品的输入框设计
               
             </span>
 
@@ -111,7 +111,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  发表于 2019 年  08月 20 日
+                  发表于 2020 年  05月 26 日
                 </p>
               
 
@@ -120,7 +120,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    共 551 字
+                    共 1.7k 字
                   </span>&nbsp;
                 
 
@@ -128,7 +128,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      预计需要 1 分钟
+                      预计需要 5 分钟
                   </span>&nbsp;
                 
 
@@ -161,9 +161,56 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <p>小时候的夏天，天空好似没有现在这般拥挤。屋里热了，搬着小板凳来到院子里，靠在奶奶的身边，抬起头来，一条闪着点点光芒的银带从院子里穿过去，看不到头，也看不到尾。</p>
+            <p>B端产品中，一个较为重要的信息录入角色是<strong>文本输入框</strong>，输入框承载着一个页面内信息录入的主要入口。那么在输入框的设计中，我们经常遇到哪些问题，需要注意哪些事项呢？笔者根据网上的文章做了一些整理，供大家参考。</p>
 <a id="more"></a>
-<p><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/21566286112_.pic.jpg" srcset="/img/loading.gif" alt=""><br>奶奶会拉着我的手，指着银河系中间对我说，<strong>你看，那个是天鹅座，仔细看，银河两边是翅膀。</strong><br><strong>银河这边是牛郎星，两边的小星星是挑着的两个娃娃。另一边是织女星，天鹅啊，在他们中间搭桥呢。</strong><br>虽然说牛郎织女的故事已经很熟悉，但每每听到奶奶讲起，我总是能盯着银河看好久，甚至感觉自己能飘了起来，离那些闪烁的精灵越来越近。<br>奶奶虽然只有小学的文化，却是我儿时认字的启蒙老师。尽管她只能读一些常用字，但还是戴着老花镜，把那本我从图书馆借回去的、讲星座神话和起源的书给看完了。<br>书里很多西方神话的人物，人名更是难读难记。但奶奶还是能记得其中很多故事，整个夏天，院子里的银河系里，都有说不完的故事。<br>有仙王座与仙后座的女儿<strong>安德罗墨达（Andromeda）</strong>，有派去蹂躏伊索比亚的<strong>鲸鱼座</strong>，有太阳神<strong>阿波罗</strong>，猎户座<strong>奥瑞恩</strong>，天神<strong>宙斯</strong>……<br>那时天空总是很清澈，星星闪亮着，闪亮着，让人忍不住去数一数。星座的故事也忍不住让人去讲一讲。<br>长大以后，我们已经越来越找不出时间，抬头望一望天空了。<br>就算你偶尔望一望，也只能看到一方灰蒙蒙，黑洞洞的空白。<br><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/airline-1807486_1280.jpg" srcset="/img/loading.gif" alt=""><br><strong>是我们的眼睛浑浊了，还是天空的星星不见了？</strong><br>已经有很久没有回去故乡的院子，想念的是那片空间，那段时间，那时的我们。<br>院子里的银河系不见了，可能是跑到了奶奶的头发里。<br>闪着点点光芒的银带，从奶奶的发间穿过去。</p>
+
+<h2 id="输入框的类型"><a href="#输入框的类型" class="headerlink" title="输入框的类型"></a>输入框的类型</h2><p>一般输入框分为文本输入框和密码输入框，而文本输入框根据录入不同又有中文输入框、英文输入框、数字输入框等。<br>输入框在开发人员分解时，主要可以拆分为文本标签、输入框、占位符三个基本结构，此外还可能有帮助、提示和反馈等信息。</p>
+<h2 id="输入框设计的要点"><a href="#输入框设计的要点" class="headerlink" title="输入框设计的要点"></a>输入框设计的要点</h2><p>输入框设计的时候，需要注意的要点有：</p>
+<ul>
+<li>表单标签的合理性</li>
+<li>输入限制</li>
+<li>占位符</li>
+<li>输入框的大小、焦点</li>
+<li>多行文本</li>
+<li>错误反馈</li>
+<li>换起键盘样式（移动端）</li>
+<li>帮助信息</li>
+<li>是否必填、规则判断</li>
+<li>结果反馈</li>
+<li>微文案</li>
+</ul>
+<h3 id="1-标签"><a href="#1-标签" class="headerlink" title="1. 标签"></a>1. 标签</h3><p>主要分为左右和上下结构，由于屏幕尺寸和空间占比原因，左右结构常见于 PC 端，但当标签名字太长时，也可以使用上下结构。</p>
+<p><strong>谨慎使用内部标签</strong></p>
+<p>内部标签只有提示性文字，当用户输入时，内部标签/文字就回消失，此时用户会失去判断的标准。当内容过多时，用户根本不记得自己填过什么。</p>
+<p>尼尔森·诺曼集团的凯蒂·舍温（Katie Sherwin）在她上传的文章中提到将标签替换为占位符的七个不好的原因：</p>
+<ul>
+<li>消失的占位符文本会使用户的短期记忆紧张</li>
+<li>没有标签，用户无法在提交表单之前检查所填写的内容</li>
+<li>出现错误消息时，人们不知道如何解决问题</li>
+<li>当将光标放在表单字段中，占位符文本消失时，使用键盘导航的用户来说很不友好。</li>
+<li>其中包含的字段不太明显。</li>
+<li>用户可能会将占位符误认为是自动填写的数据</li>
+<li>有时用户必须手动删除占位符文本。</li>
+</ul>
+<p>当然，以上原因并不全部适用，比如第六条，无论有没有标签，占位符都存在。<br>但在某些产品设计上，用户输入时，内部占位符会位移至输入框上，例如谷歌：<br><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/input1.gif" srcset="/img/loading.gif" alt="谷歌输入框的占位符设计"></p>
+<h3 id="2-输入限制"><a href="#2-输入限制" class="headerlink" title="2. 输入限制"></a>2. 输入限制</h3><p>输入限制方式有两种，一是对表单域的信息进行字数限制，在输入框右下方可以显示当前字数和最大支持字数，例如 QQ 签名；二是属性限制，比如在数字文本框，禁止输入汉字或者字母。但有时候因为开发着急，会直接使用「input」的「text」类别，没有增加限制，这时候我们需要与开发沟通解决。</p>
+<h3 id="3-占位符"><a href="#3-占位符" class="headerlink" title="3. 占位符"></a>3. 占位符</h3><p>占位符文字需要清晰明了、简短一致，颜色上不能使用太突出的颜色。<br>此外，在一个输入框可以输入多种类型信息的时候，例如用户名可以输入邮箱、手机号、QQ 等，可以使用占位符提醒。</p>
+<h3 id="4-输入框大小"><a href="#4-输入框大小" class="headerlink" title="4. 输入框大小"></a>4. 输入框大小</h3><p>输入框在开发时，具有两个元素，包括外部的可视大小，内部有效输入框的大小。<br><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/9740E31E-1428-4944-81F8-7464BED0FEB7.png" srcset="/img/loading.gif" alt="输入框的域"></p>
+<p>设计时，需要考虑开发原因，标注输入框的大小与边距。而输入框有图标时，也应该注意图标与输入框的间距。</p>
+<p>此外，需要根据输入文本的长度，合理设计输入框大小。</p>
+<h3 id="5-输入框焦点"><a href="#5-输入框焦点" class="headerlink" title="5. 输入框焦点"></a>5. 输入框焦点</h3><p>在用户准备输入的时候，焦点需要提供清晰的视觉定位。在输入框较多的时候，可以对输入框的样式做一些突出的改动，帮助用户清晰辨别。</p>
+<h3 id="6-多行文本"><a href="#6-多行文本" class="headerlink" title="6. 多行文本"></a>6. 多行文本</h3><p>多行文本出现在两个地方：标签和行内信息。</p>
+<p>标签出现名字很长的时候，我们给文字设定宽度和行高，超出规定字数的做换行处理。<br>而行内换行时，我们需要给出横向字体宽度和上下间距。当内容过多时，一定内容下可以撑开输入框，但超出规定大小时，需要做隐藏处理。</p>
+<h3 id="7-错误提醒"><a href="#7-错误提醒" class="headerlink" title="7. 错误提醒"></a>7. 错误提醒</h3><p>错误反馈需要及时、有效，而不是等用户耐心的填完所有表单，点击提交以后再进行。<br>因为用户在填写结束之后，大脑中分泌多巴胺，获得愉悦感，但在这个时候一个报错，把临到脑门的多巴胺给硬生生逼了回去，是很影响用户心情的，无论表单中所承载的信息有哪些，都应该让用户感受到引导感。用户所需要的是引导他完成表单的填写，而不是对他填写表单做判断。</p>
+<h3 id="8-换起键盘样式"><a href="#8-换起键盘样式" class="headerlink" title="8. 换起键盘样式"></a>8. 换起键盘样式</h3><p>移动端设计表单输入的时候，都会弹起键盘，在不同场景下给用户换起不同的键盘，可以极大提高操作效率。<br>例如验证码、金融支付输入时弹出数字键盘、密码输入框弹起英文键盘等。<br>另外，在某些场景下，弹起的键盘可能遮挡关键区域，我们在设计的时候要考虑到。<br><img src="https://raw.githubusercontent.com/sherlock1990/pic/master/img/20200526180242.png" srcset="/img/loading.gif" alt=""></p>
+<h3 id="9-微文案"><a href="#9-微文案" class="headerlink" title="9. 微文案"></a>9. 微文案</h3><p>无论是以上任何情形，标签还是占位符，提示性文字还是错误反馈，表意必须清晰易懂，消除用户的疑虑，在整个流程中，让用户尽快做出准确的选择。</p>
+<p>例如关闭时，弹出弹窗进行确认，是否要取消时，一个是确定，一个是取消，就会产生歧义。</p>
+<p>更多关于微文案的内容，可以参考下文：<br><a href="https://www.uisdc.com/design-guide-for-micro-copywriting" target="_blank" rel="noopener">微文案设计指南</a></p>
+<h2 id="特殊输入框的处理"><a href="#特殊输入框的处理" class="headerlink" title="特殊输入框的处理"></a>特殊输入框的处理</h2><h3 id="1-电话输入框"><a href="#1-电话输入框" class="headerlink" title="1. 电话输入框"></a>1. 电话输入框</h3><p>电话通常分为国家地区、区号、手机号。</p>
+<h3 id="2-身份证-银行卡输入框"><a href="#2-身份证-银行卡输入框" class="headerlink" title="2. 身份证/银行卡输入框"></a>2. 身份证/银行卡输入框</h3><p>此类输入框可以结合输入、输入自动填充、扫描、图片识别等功能，减少用户操作。</p>
+<h3 id="3-密码输入框"><a href="#3-密码输入框" class="headerlink" title="3. 密码输入框"></a>3. 密码输入框</h3><p>密码输入有两种形式，一是直接输入以「*」显示，从开始到结束，如果没有查看密码，就不知道自己输入是否正确；二是输入的时候明文显示，1~2s 后进行隐藏处理，这样可以减少用户的使用成本。<br>另外就是，一旦有密码，就必须有确认密码进行校正，减少用户错误率。</p>
+<h3 id="4-邮箱输入框"><a href="#4-邮箱输入框" class="headerlink" title="4. 邮箱输入框"></a>4. 邮箱输入框</h3><p>邮箱输入时，适当加上后缀选择，可以减少用户输入。</p>
+<p>本文参考链接：<a href="https://www.uisdc.com/form-design-1" target="_blank" rel="noopener">万字干货！帮你彻底完整掌握表单设计方法（上）</a></p>
 
             <hr>
           </div>
@@ -174,7 +221,7 @@
               <span>
                 <i class="iconfont icon-inbox"></i>
                 
-                  <a class="hover-with-bg" href="/categories/%E9%9A%8F%E7%AC%94">随笔</a>
+                  <a class="hover-with-bg" href="/categories/%E8%AE%BE%E8%AE%A1">设计</a>
                   &nbsp;
                 
               </span>&nbsp;&nbsp;
@@ -183,9 +230,9 @@
               <span>
                 <i class="iconfont icon-tag"></i>
                 
-                  <a class="hover-with-bg" href="/tags/%E5%9B%9E%E5%BF%86">回忆</a>
+                  <a class="hover-with-bg" href="/tags/%E8%BE%93%E5%85%A5%E6%A1%86">输入框</a>
                 
-                  <a class="hover-with-bg" href="/tags/%E6%95%85%E4%B9%A1">故乡</a>
+                  <a class="hover-with-bg" href="/tags/B%20%E7%AB%AF%E4%BA%A7%E5%93%81">B 端产品</a>
                 
               </span>
             
